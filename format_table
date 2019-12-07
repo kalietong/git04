@@ -1,0 +1,11 @@
+
+def print_format_table():
+    for style in range(8):
+        for foreground_color in range (30,38):
+            sl = ''
+            for background_color in range (40,48):
+                format = ';'.join([str(style), str(foreground_color), str(background_color)])
+                sl += '\x1b[%sm %s \x1b[0m' % (format, format)
+            print(sl)
+        print('\n')
+print_format_table()
