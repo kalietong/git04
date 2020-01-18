@@ -96,3 +96,12 @@ first_last = {
         "Ying-Chen":"Chen",
         "Zachary":"Bashkin"
         }
+
+desired_keys = []
+vals = first_last.values()
+
+for key, value in first_last.items():
+    if vals.count(value)>1:
+        desired_keys.append(key)
+
+

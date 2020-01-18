@@ -45,3 +45,13 @@ if len(mode) == n:
 else:
     get_mode = "Mode is / are: "+ ', '.join(map(str, mode))
 print( get_mode)
+
+
+
+
+3import statistics
+3for argv in sys.argv:
+   a_numbers.append(sys.argv[i])
+    i = i+1
+
+
