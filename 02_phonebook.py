@@ -1,4 +1,5 @@
 import sys
+from collections import Counter
 first_last = {
         "Aditya":"Pooruli",
         "Advait":"Chowdhary",
@@ -98,10 +99,23 @@ first_last = {
         }
 
 desired_keys = []
-vals = first_last.values()
+#val = first_last.values()
 
-for key, value in first_last.items():
-    if vals.count(value)>1:
+#for key, value in first_last.items():
+    #if key.count(value)>1:
+    #if value.count(value)>1:
+       # print(first_last.items(value))
+        #desired_keys.append(key)
+print("**Shared first names**")
+#print(desired_keys)
+
+print("**Shared last names**")
+
+last = Counter(first_last.values())
+for key in last:
+    if Counter(first_last.values)>1:
         desired_keys.append(key)
+
+print(desired_keys)
 
 
